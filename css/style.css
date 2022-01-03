@@ -1,0 +1,124 @@
+:root {
+  --font-family: "Nunito", sans-serif;
+  --main-black-clr: #000000;
+  --black-clr: #282828;
+  --transparent-white-clr: #ffffff1a;
+  --gray-clr: #3e3e3e;
+  --shadow-clr: #00000062;
+  --border-clr: #000000cc;
+  --lower-count-clr: #944d4d;
+  --add-count-clr: #4c984c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  cursor: url(../img/cursor.png), auto;
+  font-family: var(--font-family);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(var(--main-black-clr) 15%, transparent 16%) 0 0,
+    radial-gradient(var(--main-black-clr) 15%, transparent 16%) 0.8rem 0.8rem,
+    radial-gradient(var(--transparent-white-clr) 15%, transparent 20%) 0 0.1rem,
+    radial-gradient(var(--transparent-white-clr) 15%, transparent 20%) 0.8rem
+      0.9rem,
+    var(--black-clr);
+  background-size: 1.6rem 1.6rem;
+}
+
+.title {
+  font-size: 7rem;
+  text-align: center;
+  font-weight: 800;
+  color: var(--main-black-clr);
+}
+
+#counter {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2.5rem 3rem 3rem;
+  color: var(--main-black-clr);
+  font: 600 11rem var(--font-family);
+}
+
+.container {
+  padding: 3rem;
+  background-color: var(--black-clr);
+  border-radius: 0.4rem;
+  border: 0.2rem solid var(--border-clr);
+  box-shadow: 0 0 0.6rem var(--shadow-clr);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  cursor: url(../img/hand-cursor.png), pointer;
+  border-radius: 1rem;
+  user-select: none;
+  padding: 2rem;
+  margin: 1rem;
+  font: 600 2rem var(--font-family);
+  transition: 0.2s ease;
+  background-color: var(--transparent-white-clr);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: var(--shadow-clr) 0 0.3rem 0.6rem,
+    var(--shadow-clr) 0 0.3rem 0.6rem;
+}
+
+.btn:hover {
+  transform: scale(0.96);
+}
+
+.prevBtn:hover {
+  background-color: var(--lower-count-clr);
+}
+
+.nextBtn:hover {
+  background-color: var(--add-count-clr);
+}
+
+.resetBtn:hover {
+  color: var(--gray-clr);
+  background-color: var(--main-black-clr);
+  cursor: url(../img/gray-hand-cursor.png), pointer;
+}
+
+::selection {
+  color: var(--gray-clr);
+  background-color: var(--main-black-clr);
+}
+
+/* media queries */
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  html {
+    font-size: 5px;
+  }
+}
