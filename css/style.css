@@ -4,8 +4,12 @@
   --black-clr: #282828;
   --transparent-white-clr: #ffffff1a;
   --gray-clr: #3e3e3e;
-  --shadow-clr: #00000062;
+  --shadow-clr: #00000059;
+  --shadow-clr2: #00000066;
+  --shadow-clr3: #0000004d;
+  --shadow-clr4: #00000033;
   --border-clr: #000000cc;
+  --hover-clr: #000000eb;
   --lower-count-clr: #944d4d;
   --add-count-clr: #4c984c;
 }
@@ -57,9 +61,9 @@ body {
 .container {
   padding: 3rem;
   background-color: var(--black-clr);
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   border: 0.2rem solid var(--border-clr);
-  box-shadow: 0 0 0.6rem var(--shadow-clr);
+  box-shadow: var(--shadow-clr) 0 -5rem 3.6rem -2.8rem inset;
 }
 
 .buttons {
@@ -77,8 +81,9 @@ body {
   transition: 0.2s ease;
   background-color: var(--transparent-white-clr);
   -webkit-tap-highlight-color: transparent;
-  box-shadow: var(--shadow-clr) 0 0.3rem 0.6rem,
-    var(--shadow-clr) 0 0.3rem 0.6rem;
+  box-shadow: var(--shadow-clr2) 0 0.2rem 0.4rem,
+    var(--shadow-clr3) 0 0.7rem 1.3rem -0.3rem,
+    var(--shadow-clr4) 0 -0.3rem 0 inset;
 }
 
 .btn:hover {
@@ -95,8 +100,11 @@ body {
 
 .resetBtn:hover {
   color: var(--gray-clr);
-  background-color: var(--main-black-clr);
+  background-color: var(--hover-clr);
   cursor: url(../img/gray-hand-cursor.png), pointer;
+  box-shadow: var(--shadow-clr2) 0 0.2rem 0.4rem,
+    var(--shadow-clr3) 0 0.7rem 1.3rem -0.4rem,
+    var(--main-black-clr) 0 -0.3rem 0 inset;
 }
 
 ::selection {
