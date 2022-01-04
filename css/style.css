@@ -86,7 +86,7 @@ body {
     var(--shadow-clr4) 0 -0.3rem 0 inset;
 }
 
-.btn:hover {
+.btn:active {
   transform: scale(0.96);
 }
 
