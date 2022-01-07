@@ -9,7 +9,7 @@
   --shadow-clr3: #0000004d;
   --shadow-clr4: #00000033;
   --border-clr: #000000cc;
-  --hover-clr: #000000eb;
+  --hover-clr: #666666;
   --lower-count-clr: #944d4d;
   --add-count-clr: #4c984c;
 }
@@ -99,12 +99,8 @@ body {
 }
 
 .resetBtn:hover {
-  color: var(--gray-clr);
   background-color: var(--hover-clr);
   cursor: url(../img/gray-hand-cursor.png), pointer;
-  box-shadow: var(--shadow-clr2) 0 0.2rem 0.4rem,
-    var(--shadow-clr3) 0 0.7rem 1.3rem -0.4rem,
-    var(--main-black-clr) 0 -0.3rem 0 inset;
 }
 
 ::selection {
