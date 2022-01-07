@@ -1,3 +1,5 @@
+"use strict";
+
 const buttons = document.querySelectorAll(".btn");
 const counter = document.getElementById("counter");
 let count = 0;
