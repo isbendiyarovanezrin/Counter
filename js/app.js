@@ -1,5 +1,6 @@
 "use strict";
 
+const sound = document.getElementById("sound");
 const buttons = document.querySelectorAll(".btn");
 const counter = document.getElementById("counter");
 let count = 0;
@@ -7,10 +8,15 @@ let count = 0;
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.classList.contains("prevBtn")) {
+      sound.play();
+      sound.currentTime = 0.1;
       count--;
     } else if (button.classList.contains("nextBtn")) {
+      sound.play();
+      sound.currentTime = 0.1;
       count++;
     } else {
+      sound.pause();
       count = 0;
     }
 
