@@ -12,6 +12,7 @@
   --hover-clr: #666666;
   --lower-count-clr: #944d4d;
   --add-count-clr: #4c984c;
+  --loader-color: #3f3f3f;
 }
 
 * {
@@ -105,6 +106,24 @@ body {
 ::selection {
   color: var(--gray-clr);
   background-color: var(--main-black-clr);
+}
+
+/* loader */
+#loadingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--loader-color);
+}
+
+.loader {
+  width: 5.9rem;
+  height: 5.9rem;
+  background: center / contain no-repeat url(../img/loader.gif);
 }
 
 /* media queries */
