@@ -31,3 +31,14 @@ buttons.forEach((button) => {
     }
   });
 });
+
+// loader
+$(window).on("load", () => {
+  setTimeout(removeLoader, 1700);
+});
+
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, () => {
+    $("#loadingDiv").remove();
+  });
+}
