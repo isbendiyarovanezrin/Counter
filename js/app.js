@@ -34,7 +34,7 @@ buttons.forEach((button) => {
 
 // loader
 $(window).on("load", () => {
-  setTimeout(removeLoader, 1700);
+  setTimeout(removeLoader, 1500);
 });
 
 function removeLoader() {
