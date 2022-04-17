@@ -4,11 +4,10 @@
   --black-clr: #292929;
   --transparent-white-clr: #ffffff1a;
   --gray-clr: #3e3e3e;
-  --shadow-clr: #000000ec;
+  --shadow-clr: #000000cc;
   --shadow-clr2: #00000066;
   --shadow-clr3: #0000004d;
   --shadow-clr4: #00000033;
-  --border-clr: #000000cc;
   --hover-clr: #666666;
   --lower-count-clr: #944d4d;
   --add-count-clr: #4c984c;
@@ -35,13 +34,21 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: radial-gradient(var(--main-black-clr) 15%, transparent 16%) 0 0,
+  background: radial-gradient(var(--loader-color) 15%, transparent 16%) 0 0,
     radial-gradient(var(--main-black-clr) 15%, transparent 16%) 0.8rem 0.8rem,
     radial-gradient(var(--transparent-white-clr) 15%, transparent 20%) 0 0.1rem,
     radial-gradient(var(--transparent-white-clr) 15%, transparent 20%) 0.8rem
       0.9rem,
     var(--black-clr);
   background-size: 1.6rem 1.6rem;
+}
+
+#container {
+  padding: 3rem;
+  background-color: var(--black-clr);
+  border-radius: 3.5rem;
+  border: 0.2rem solid var(--shadow-clr);
+  box-shadow: inset 0 0 2.2rem var(--shadow-clr);
 }
 
 .title {
@@ -57,14 +64,6 @@ body {
   margin: 2.5rem 3rem 3rem;
   color: var(--main-black-clr);
   font: 600 12rem var(--font-family);
-}
-
-#container {
-  padding: 3rem;
-  background-color: var(--black-clr);
-  border-radius: 3.5rem;
-  border: 0.2rem solid var(--border-clr);
-  box-shadow: inset 0 0 2.2rem var(--shadow-clr);
 }
 
 .buttons {
