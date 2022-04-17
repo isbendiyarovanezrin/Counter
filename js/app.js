@@ -16,7 +16,6 @@ buttons.forEach((button) => {
       sound.currentTime = 0.1;
       count++;
     } else {
-      sound.pause();
       count = 0;
     }
 

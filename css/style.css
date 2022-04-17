@@ -46,8 +46,8 @@ body {
 
 .title {
   font-size: 7rem;
-  text-align: center;
   font-weight: 800;
+  text-align: center;
   color: var(--main-black-clr);
 }
 
@@ -59,7 +59,7 @@ body {
   font: 600 11rem var(--font-family);
 }
 
-.container {
+#container {
   padding: 3rem;
   background-color: var(--black-clr);
   border-radius: 3.5rem;
@@ -108,7 +108,7 @@ body {
   background-color: var(--main-black-clr);
 }
 
-/* loader */
+/* loader start */
 #loadingDiv {
   display: flex;
   align-items: center;
@@ -125,8 +125,9 @@ body {
   height: 5.9rem;
   background: center / contain no-repeat url(../img/loader.gif);
 }
+/* loader end */
 
-/* media queries */
+/* media queries start */
 @media screen and (max-width: 900px) {
   html {
     font-size: 8px;
@@ -144,3 +145,4 @@ body {
     font-size: 5px;
   }
 }
+/* media queries end */
