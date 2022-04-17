@@ -45,7 +45,7 @@ body {
 }
 
 .title {
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 800;
   text-align: center;
   color: var(--main-black-clr);
@@ -56,7 +56,7 @@ body {
   text-align: center;
   margin: 2.5rem 3rem 3rem;
   color: var(--main-black-clr);
-  font: 600 11rem var(--font-family);
+  font: 600 12rem var(--font-family);
 }
 
 #container {
@@ -76,9 +76,9 @@ body {
   cursor: url(../img/hand-cursor.png), pointer;
   border-radius: 1rem;
   user-select: none;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   margin: 1rem;
-  font: 600 2rem var(--font-family);
+  font: 700 2.2rem var(--font-family);
   transition: 0.2s ease;
   background-color: var(--transparent-white-clr);
   -webkit-tap-highlight-color: transparent;
@@ -137,6 +137,10 @@ body {
 @media screen and (max-width: 500px) {
   html {
     font-size: 6px;
+  }
+
+  .title {
+    font-size: 5.4rem;
   }
 }
 
